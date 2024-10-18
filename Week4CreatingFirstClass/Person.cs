@@ -1,9 +1,9 @@
 ﻿namespace Week4CreatingFirstClass
 {
-    internal class Person
+    internal class Person // Okulumdaki sınıftaki kişilerin bilgilerini tutmak için Person sınıfını oluşturdum.
     {
 
-        // Alanları oluşturdum.
+        // Sınıfın Alanlarını oluşturdum.
 
         public string name;
         public string surname;

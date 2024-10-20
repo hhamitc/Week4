@@ -1,6 +1,6 @@
-﻿# Patika+ 4. Hafta Constructor Metod Uygulama Örneği
+﻿# Patika+ 4. Hafta Constructor Metod Uygulama Örneğidir
 
-Aşağıdaki soruya cevap veriniz.
+Aşağıdaki soruya cevap verir.
 
 Bu örnekte sizlerden bir **Bebek** sınıfı tanımlamanız isteniyor.
 
@@ -17,7 +17,8 @@ Her iki constructor içerisinde de ortak olarak bebek nesnesi oluşturulduğunda
 
 Tanımlama sonrasında her iki constructor ile de birer bebek nesnesi oluşturup, bu nesnelerin özelliklerini konsol ekranına yazdırınız.
 
-Çözümü de aşağıdaki şekilde uyguladım.
+
+Uygulanan çözüm de aşağıdaki gibidr;
 
 
 

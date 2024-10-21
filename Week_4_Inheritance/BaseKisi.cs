@@ -3,9 +3,17 @@
     // Abstract base class representing a person
     public abstract class BaseKisi
     {
-        // Properties for first name and last name
+        // Property for first name
         public string Ad { get; set; }
+
+        // Property for last name
         public string Soyad { get; set; }
+
+        // Method to display basic information
+        public virtual void BilgiYazdir()
+        {
+            Console.WriteLine($"Ad: {Ad}, Soyad: {Soyad}");
+        }
 
         // Nested class representing a student, inheriting from BaseKisi
         public class Ogrenci : BaseKisi
@@ -14,7 +22,7 @@
             public int OgrenciNo { get; set; }
 
             // Method to display student information
-            public void OgrenciBilgileri()
+            public override void BilgiYazdir()
             {
                 Console.WriteLine($"Öğrenci Ad-Soyad:{Ad} {Soyad}, Öğr.No: {OgrenciNo}");
             }
@@ -27,7 +35,7 @@
             public int Maas { get; set; }
 
             // Method to display teacher information
-            public void OgretmenBilgileri()
+            public override void BilgiYazdir()
             {
                 Console.WriteLine($"Öğretmen Ad-Soyad: {Ad} {Soyad}, Maaş: {Maas}");
             }

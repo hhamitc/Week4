@@ -6,13 +6,13 @@ internal class Program
     {
         // Creating an instance of the Ogretmen class
         Ogretmen ogretmen = new Ogretmen();
-        ogretmen.Ad = "Yiğit"; // Setting the first name
+        //ogretmen.Ad = "Yiğit"; // Setting the first name
         ogretmen.Soyad = "Hacıefendioğlu"; // Setting the last name
         ogretmen.Maas = 75000; // Setting the salary
 
         // Displaying teacher information
-        ogretmen.OgretmenBilgileri();
-        Console.WriteLine(new string('*', 33)); // Printing a separator
+        ogretmen.BilgiYazdir();
+        Console.WriteLine(new string('-', 33)); // Printing a separator
 
         // Creating an instance of the Ogrenci class
         Ogrenci ogrenci = new Ogrenci();
@@ -21,7 +21,7 @@ internal class Program
         ogrenci.OgrenciNo = 144144144; // Setting the student number
 
         // Displaying student information
-        ogrenci.OgrenciBilgileri();
+        ogrenci.BilgiYazdir();
 
 
 

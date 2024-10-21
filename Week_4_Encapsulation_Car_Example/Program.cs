@@ -19,7 +19,7 @@ public class Program
         car1.DisplayCarInfo();                          //Displaying car info on console.
 
         Car car2 = new Car("Honda", "Civic Type-R", "Red", 3);// Creating new objet from car Class
-        car2.DisplayCarInfo();                              //Displaying car info on console.
+        car2.DisplayCarInfo();                            //Displaying car info on console.
 
 
 

@@ -11,8 +11,8 @@ Bu proje, polymorphism prensibini kullanarak geometrik şekillerin alanını hes
 4. **Square**: Karenin alanını hesaplayan sınıf. Alan hesaplaması, `Genişlik x Yükseklik` formülü ile yapılır.
 
 ### Özellikler (Property'ler):
-- **_width (Genişlik)**: Geometrik şeklin genişliğini temsil eder.
-- **_height (Yükseklik)**: Geometrik şeklin yüksekliğini temsil eder.
+- **Width (Genişlik)**: Geometrik şeklin genişliğini temsil eder.
+- **Height (Yükseklik)**: Geometrik şeklin yüksekliğini temsil eder.
 
 ### Metotlar:
 - **CalculateArea()**: Her sınıfta, geometrik şeklin alanını hesaplayan metot. `BaseGeometricShape` sınıfında sanal (virtual) olarak tanımlanmış, diğer sınıflarda geçersiz kılınarak (override) özelleştirilmiştir.
@@ -26,16 +26,16 @@ Proje, her bir geometrik şekil için bir nesne oluşturur, genişlik ve yüksek
 
 ```csharp
 BaseGeometricShape triangle = new Triangle();
-triangle._height = 8;
-triangle._width = 5;
+triangle.Height = 8;
+triangle.Width = 5;
 triangle.DisplayResult();
 
 BaseGeometricShape square = new Square();
-square._height = 9;
-square._width = 10;
+square.Height = 9;
+square.Width = 10;
 square.DisplayResult();
 
 BaseGeometricShape rectangle = new Rectangle();
-rectangle._height = 10;
-rectangle._width = 5;
+rectangle.Height = 10;
+rectangle.Width = 5;
 rectangle.DisplayResult();

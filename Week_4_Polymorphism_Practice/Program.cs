@@ -6,8 +6,8 @@ internal class Program
     {
         // Create a Triangle object
         BaseGeometricShape triangle = new Triangle();
-        triangle._height = 8;
-        triangle._width = 5;
+        triangle.Height = 8;
+        triangle.Width = 5;
 
         // Display the area of the triangle
         triangle.DisplayResult();
@@ -17,8 +17,8 @@ internal class Program
 
         // Create a Square object
         BaseGeometricShape square = new Square();
-        square._height = 9;
-        square._width = 10;
+        square.Height = 9;
+        square.Width = 10;
 
         // Display the area of the square
         square.DisplayResult();
@@ -28,8 +28,8 @@ internal class Program
 
         // Create a Rectangle object
         BaseGeometricShape rectangle = new Rectangle();
-        rectangle._height = 10;
-        rectangle._width = 5;
+        rectangle.Height = 10;
+        rectangle.Width = 5;
 
         // Display the area of the rectangle
         rectangle.DisplayResult();

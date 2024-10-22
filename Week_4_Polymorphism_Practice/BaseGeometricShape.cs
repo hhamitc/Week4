@@ -4,13 +4,13 @@
     public abstract class BaseGeometricShape
     {
         // Properties for height and width
-        public int _height { get; set; }
-        public int _width { get; set; }
+        public int Height { get; set; }
+        public int Width { get; set; }
 
         // Virtual method to calculate the area
         public virtual double CalculateArea()
         {
-            return _height * _width;
+            return Height * Width;
         }
 
         // Virtual method to display the result
@@ -26,7 +26,7 @@
         // Override method to calculate the area of a triangle
         public override double CalculateArea()
         {
-            return (_height * _width) / 2;
+            return (Height * Width) / 2;
         }
 
         // Override method to display the result for a triangle

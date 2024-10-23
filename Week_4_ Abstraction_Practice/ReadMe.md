@@ -16,7 +16,7 @@ Ancak her çalışanın görevi (pozisyonu) farklı olabilir. Örneğin:
 `Gorev()` metodunu çağırdığımızda her çalışan, kendi yaptığı işi konsol ekranında söyleyecektir.
 
 ### Örnek:
-Hasan Çıldırmış, şirketin Proje Yöneticisi olarak görev yapıyor. Kendisi üzerinden `Gorev()` abstract metodu çağırıldığında, konsol ekranında şu mesaj yazdırılmalıdır:
+Kendisi üzerinden `Gorev()` abstract metodu çağırıldığında, konsol ekranında şu mesaj yazdırılmalıdır: Hasan Çıldırmış, şirketin Proje Yöneticisi olarak görev yapıyor.
 
 
 

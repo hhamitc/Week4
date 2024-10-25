@@ -8,14 +8,14 @@
             get { return trLicensed; }
             set
             {
-                if (value == "Evet" || value == "Hayır")
+                if (value == "evet" || value == "hayir")
                 {
                     trLicensed = value;
                 }
                 else
                 {
                     Console.WriteLine("\nHatalı Giriş. Lisans Durumu Hayır olarak ayarlandı.\n");
-                    trLicensed = "Hayır";
+                    trLicensed = "hayir";
                 }
             }
         }

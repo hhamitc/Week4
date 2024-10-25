@@ -50,8 +50,8 @@ public class Program
         if (keyInfo.Key == ConsoleKey.D1 || keyInfo.Key == ConsoleKey.NumPad1)
         {
 
-            Console.Write("Tr Lisanlı Mı (Evet/Hayıt): ");
-            trLicensed = Console.ReadLine();
+            Console.Write("Tr Lisanlı Mı (Evet/Hayir): ");
+            trLicensed = Console.ReadLine().ToLower();
             Phone phone = new Phone(serialNumber, productName, description, operatingSystem, trLicensed);
 
             // Bilgileri ekrana yazdır
@@ -59,17 +59,19 @@ public class Program
 
         }
         else if (keyInfo.Key == ConsoleKey.D2 || keyInfo.Key == ConsoleKey.NumPad2)
-
+        {
             Console.Write("USB Port Sayısı (2 veya 4): ");
-        usbPortCount = int.Parse(Console.ReadLine());
-        Console.Write("Bluetooth (Var/Yok): ");
-        bluetooth = Console.ReadLine();
+            usbPortCount = int.Parse(Console.ReadLine());
+            Console.Write("Bluetooth (Var/Yok): ");
+            bluetooth = Console.ReadLine().ToUpper();
 
-        // Computer nesnesini oluştur
-        Computer computer = new Computer(serialNumber, productName, description, operatingSystem, usbPortCount, bluetooth);
+            // Computer nesnesini oluştur
+            Computer computer = new Computer(serialNumber, productName, description, operatingSystem, usbPortCount, bluetooth);
 
-        // Bilgileri ekrana yazdır
-        computer.DisplayInfo();
+            // Bilgileri ekrana yazdır
+            computer.DisplayInfo();
+        }
+
 
 
 

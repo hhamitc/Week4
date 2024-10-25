@@ -26,14 +26,14 @@
             get { return bluetooth; }
             set
             {
-                if (value == "Var" || value == "Yok")
+                if (value == "VAR" || value == "YOK")
                 {
                     bluetooth = value;
                 }
                 else
                 {
                     Console.WriteLine("\nHatalı Giriş. Bluetooth Yok olarak ayarlandı.\n");
-                    bluetooth = "Yok";
+                    bluetooth = "YOK";
                 }
             }
         }

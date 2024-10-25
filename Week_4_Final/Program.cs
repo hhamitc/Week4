@@ -21,21 +21,6 @@ public class Program
         {
             Console.WriteLine();
             Console.WriteLine("Telefon Bilgilerini Giriniz:");
-            //Console.Write("Seri Numarası: ");
-            //serialNumber = Console.ReadLine();
-            //Console.Write("Ürün Adı: ");
-            //productName = Console.ReadLine();
-            //Console.Write("Açıklama: ");
-            //description = Console.ReadLine();
-            //Console.Write("İşletim Sistemi: ");
-            //operatingSystem = Console.ReadLine();
-            //Console.Write("Tr Lisanlı Mı (Evet/Hayıt): ");
-            //trLicensed = Console.ReadLine();
-
-            //Phone phone = new Phone(serialNumber, productName, description, operatingSystem, trLicensed);
-
-            //// Bilgileri ekrana yazdır
-            //phone.DisplayInfo();
 
 
         }
@@ -44,24 +29,6 @@ public class Program
             Console.WriteLine();
 
             Console.WriteLine("Bilgisayar Bilgilerini Giriniz:");
-            //Console.Write("Seri Numarası: ");
-            //serialNumber = Console.ReadLine();
-            //Console.Write("Ürün Adı: ");
-            //productName = Console.ReadLine();
-            //Console.Write("Açıklama: ");
-            //description = Console.ReadLine();
-            //Console.Write("İşletim Sistemi: ");
-            //operatingSystem = Console.ReadLine();
-            //Console.Write("USB Port Sayısı (2 veya 4): ");
-            //usbPortCount = int.Parse(Console.ReadLine());
-            //Console.Write("Bluetooth (Var/Yok): ");
-            //bluetooth = Console.ReadLine();
-
-            //// Computer nesnesini oluştur
-            //Computer computer = new Computer(serialNumber, productName, description, operatingSystem, usbPortCount, bluetooth);
-
-            //// Bilgileri ekrana yazdır
-            //computer.DisplayInfo();
 
         }
         else

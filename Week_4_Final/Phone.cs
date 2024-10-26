@@ -2,6 +2,7 @@
 {
     public class Phone : BaseMachine
     {
+        #region Telefon Sınıfı için gerekli ek field ve propertylerin oluşuturulması
         public string trLicensed;
         public string TRLicensed
         {
@@ -19,9 +20,11 @@
                 }
             }
         }
+        #endregion
 
 
 
+        #region Display info metotuna telefon için override yapımı
         public override void DisplayInfo()
         {
             base.DisplayInfo();
@@ -29,12 +32,16 @@
             Console.WriteLine($"{DeviceType} başarıyla oluşturuldu. ");
 
         }
+        #endregion
 
+
+
+        #region Telefon sınıfı için property içeren Constructor yazımı
         public Phone(string serialNumber, string productName, string description, string operatingSystem, string trLicensed) : base(serialNumber, productName, description, operatingSystem)
         {
             DeviceType = "Telefon";
             TRLicensed = trLicensed;
-
         }
+        #endregion
     }
 }

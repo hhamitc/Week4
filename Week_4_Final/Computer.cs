@@ -2,6 +2,7 @@
 {
     public class Computer : BaseMachine
     {
+        #region Bilgisayar sınıfı için gereken ek field ve properylerin oluşturulması
         public string bluetooth;
         public int usbPortCount;
         public int UsbPortCount
@@ -37,8 +38,10 @@
                 }
             }
         }
+        #endregion
 
 
+        #region Display info metotuna bilgisayar için override yapımı
         public override void DisplayInfo()
         {
             base.DisplayInfo();
@@ -47,13 +50,17 @@
             Console.WriteLine($"{DeviceType} başarıyla oluşturuldu. ");
 
         }
+        #endregion
 
+
+        #region Bilgisayar sınıfı için property içeren Constructor yazımı
         public Computer(string serialNumber, string productName, string description, string operatingSystem, int usbPortCount, string bluetooth) : base(serialNumber, productName, description, operatingSystem)
         {
             DeviceType = "Bilgisayar";
             UsbPortCount = usbPortCount;
             Bluetooth = bluetooth;
         }
+        #endregion
 
 
     }

@@ -58,7 +58,7 @@ public class Program
         #endregion
 
 
-        #region Telefon Seçimine özel eklenen kısım
+        #region Telefon Seçimine özel eklenen kısım ve nesnenin oluşturulması
 
         if (keyInfo.Key == ConsoleKey.D1 || keyInfo.Key == ConsoleKey.NumPad1)
         {
@@ -74,7 +74,7 @@ public class Program
         #endregion
 
 
-        #region Bilgisayar Seçimine özel eklenen kısım
+        #region Bilgisayar Seçimine özel eklenen kısım ve nesnenin oluşturulması
 
         else if (keyInfo.Key == ConsoleKey.D2 || keyInfo.Key == ConsoleKey.NumPad2)
         {

@@ -5,6 +5,8 @@ public class Program
     public static void Main(string[] args)
     {
     Begin:
+        #region Null Fieldlar
+
         string serialNumber = string.Empty;
         string productName = string.Empty;
         string description = string.Empty;
@@ -13,6 +15,11 @@ public class Program
         string trLicensed = string.Empty;
         int usbPortCount = 0;
         string bluetooth = string.Empty;
+
+        #endregion
+
+
+        #region Üretilecek Cihaz Seçim Kısmı
 
         Console.Clear();
         Console.WriteLine("Telefon Üretmek için 1'e , Bilgisayar üretmek için 2'ye basın");
@@ -35,7 +42,10 @@ public class Program
         {
             goto Begin;
         }
+        #endregion
 
+
+        #region Her iki seçim için de ortak bölüm
 
         Console.Write("Seri Numarası: ");
         serialNumber = Console.ReadLine();
@@ -45,7 +55,10 @@ public class Program
         description = Console.ReadLine();
         Console.Write("İşletim Sistemi: ");
         operatingSystem = Console.ReadLine();
+        #endregion
 
+
+        #region Telefon Seçimine özel eklenen kısım
 
         if (keyInfo.Key == ConsoleKey.D1 || keyInfo.Key == ConsoleKey.NumPad1)
         {
@@ -58,6 +71,11 @@ public class Program
             phone.DisplayInfo();
 
         }
+        #endregion
+
+
+        #region Bilgisayar Seçimine özel eklenen kısım
+
         else if (keyInfo.Key == ConsoleKey.D2 || keyInfo.Key == ConsoleKey.NumPad2)
         {
             Console.Write("USB Port Sayısı (2 veya 4): ");
@@ -71,12 +89,10 @@ public class Program
             // Bilgileri ekrana yazdır
             computer.DisplayInfo();
         }
+        #endregion
 
 
-
-
-
-
+        #region Yeni ürün üret veya çık seçeneği
 
         Console.WriteLine("Yeni bir ürün oluşturmak için E' ye basabilriniz. Aksi halde çıkış yapılacaktır.");
         ConsoleKeyInfo reUseKey = Console.ReadKey();
@@ -84,6 +100,7 @@ public class Program
             goto Begin;
 
         else return;
+        #endregion
 
         Console.ReadKey();
     }

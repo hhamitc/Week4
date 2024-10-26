@@ -54,11 +54,7 @@
             UsbPortCount = usbPortCount;
             Bluetooth = bluetooth;
         }
-        //public Computer()
-        //{
-        //    DeviceType = "Computer";
-        //    ProduceDate = DateTime.Now;
-        //}
+
 
     }
 }
